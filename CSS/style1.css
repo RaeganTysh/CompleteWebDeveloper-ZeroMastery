@@ -1,0 +1,63 @@
+/*Selector {
+	Property:value;
+}*/
+/* star selector will select everything but remember anything after it gets re-styled cascading!*/
+/**{
+	text-align: right;
+
+}*/
+
+body{
+	background-image: url(../IMG/background.webp);
+	background-size: cover;
+}
+
+h2, p {
+	color: black;
+	text-align: center;
+	border: 5px solid rgba(124, 124, 168, 0.8);
+	cursor: pointer;
+	/*background-color: black;*/
+}
+
+/*all p's contained in h2 get htis sytling*/
+h2 p{
+	color: yellow;
+	text-align: center;
+	border: 5px solid rgba(124, 124, 168, 0.8);
+	cursor: pointer;
+
+}
+
+p{
+	color:pink;
+
+}
+p{
+	color:black;
+
+}
+li{
+	list-style-type: none;
+	display: inline-block;
+}
+.webtext{
+	border: 5px dashed green;
+	text-align: center;
+
+}
+.active{
+	color: red;
+
+
+}
+#div1{
+	background-color: rgba(0, 0, 216, 0.2);
+
+}
+
+#div2{
+	background-color: rgba(255, 0, 0, 0.2);
+	border: 10px solid rgba(0, 0, 255, 0.5);
+
+}
