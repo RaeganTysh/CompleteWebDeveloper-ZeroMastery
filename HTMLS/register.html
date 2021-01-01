@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/style1.css">
+</head>
+<body>
+	<a href="newpage.html">New Page</a><br>
+	<a href="MyY First Website.html">Home</a>
+
+	<form>
+		First Name: <input type="text" name="fistname" ><br>
+		Last Name: <input type="text" name="lastname" ><br>
+		Email: <input type="email" name="email" required><br>
+		Password: <input type="password" name="password" min="5"><br>
+		Birthday: <input type="date" name="birthday" ><br>
+		Gender:<br>
+		 <input type="radio" name="gender" value="Male" >Male<br>
+		 <input type="radio" name="gender" value="Female">Female<br>
+		 <input type="radio" name="gender" value="Other" >Other<br>
+		 Pets:<br>
+		 <input type="checkbox" name="cat" >Cat<br>
+		 <input type="checkbox" name="dog" >Dog<br>
+		 <input type="checkbox" name="other">Other<br>
+		 Cars:<br>
+		 <select name="cars">
+		 	<option value="volvo">Volvo</option>
+		 	<option value="audi">Audi</option>
+		 </select><br><br>
+		 <select multiple>
+		 	<option value="volvo" name="volvo">Volvo</option>
+		 	<option value="audi" name="audi">Audi</option>
+		 </select><br>
+
+		<input type="submit" value="Register" name="">
+		<input type="reset">
+	</form>
+
+</body>
+</html>
+<!--  Query string attached to URL upon submit
+?
+fistname=rae
+&lastname=tysh
+&email=234%40yahoo.com
+&password=testy
+&birthday=2020-11-03
+&gender=Female
+&cat=on
+&dog=on
+&cars=audi -->
