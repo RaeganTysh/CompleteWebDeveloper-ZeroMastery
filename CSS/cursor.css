@@ -32,8 +32,8 @@
 .sw-resize       { cursor: sw-resize; }
 .nesw-resize     { cursor: nesw-resize; }
 .nwse-resize     { cursor: nwse-resize; }
-.custom          { cursor: url(emoji.jpg), auto;}
-.custom          { cursor: url('some-cursor.ico'), default;}
+.custom          { cursor: url(../IMG/emoji.jpg), auto;}
+/*.custom          { cursor: url('some-cursor.ico'), default;}*/
 
 body {
   text-align: center;
@@ -59,7 +59,7 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, A
 }
 
 /*not working*/
-/*.custom:hover {
-  cursor:url(emoji.jpg), default !important;
-}*/
+.custom:hover {
+  cursor:url(../IMG/emoji.jpg), default !important;
+}
 
