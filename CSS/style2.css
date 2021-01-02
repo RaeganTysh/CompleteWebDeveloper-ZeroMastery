@@ -2,7 +2,41 @@
 	Property:value;
 }*/
 
+
 h2 {
 	color: green;
 	background-color: black;
+}
+
+/*display inline block show all next to each other*/
+.boxmodel{
+	border: 5px solid red;
+	display: inline-block;
+	/*padding creates padding all around inside the box*/
+	/*padding: 20px;*/
+	/*top, right, bottom, left*/
+	padding: 5px 20px 5px 20px;
+	/*margins creates between boxes all around*/
+	/*margin: 20px; */
+	/*top, right, bottom, left*/
+	/*margin: 0px 20px 0px 0px;*/
+	/*top/bottom & left/right*/
+	margin: 0px 30px;
+	width: 33px;
+	height: 55px;
+
+}
+
+
+p{
+	font-size: 40px;
+
+}
+
+/*5em 5 times the conatining element p tag- changes relative to font-size*/
+/*rem root element (relative size of the docuemnt)- changes to p tag don't effect rem*/
+span{
+	font-size: 2em;
+	/*font-size: 5rem;*/
+
 }

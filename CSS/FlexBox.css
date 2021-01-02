@@ -1,0 +1,47 @@
+/* add everything in the div in a container
+display: flex- row across page
+flex-wrap- wraps content and changes with page size*/
+/*justify-content (flex-start, flex-end, center, space-between, space-around, space-evenly)*/
+
+body{
+    margin:0px;
+}
+
+.container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+h1{
+    font-family: fantasy;
+    font-size:3em;
+    line-height: 100px;
+    border-bottom: 3px solid pink;
+    border-right: 3px solid pink;
+    width: 400px;
+    text-align:center; /*aligns the line under the text*/
+    margin-top:10px;
+    box-shadow: 4px 4px 5px #888888;
+    /*ex add browser prefixes to CSS3 that is not fully supported ex)-ms internet ex, -moz-firefox, -webkit-chrome/safari/opera*/
+    /*-moz-box-shadow:4px 4px 5px #888888;
+    -ms-box-shadow:4px 4px 5px #888888;
+    -webkit-box-shadow:4px 4px 5px #888888;
+    -o-box-shadow:4px 4px 5px #888888;
+    box-shadow: 4px 4px 5px #888888;*/
+
+}
+
+
+img{
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    /*CSS3- on hover the image will increase by 1.1x over 1s- check that browser has support*/
+    transition: all 1s;
+}
+
+img:hover{
+    transform: scale(1.1);
+
+}

@@ -6,21 +6,22 @@
 	text-align: right;
 
 }*/
+/*CSS styling for MyFirstWbSite-Home*/
 
 body{
-	background-image: url(background.webp);
+	background-image: url(../IMG/background.webp);
 	background-size: cover;
 }
 /*all h2 and p elements get styled */
 h2, p {
-	color: black;
+	color: blue;
 	text-align: center;
-	border: 5px solid rgba(124, 124, 168, 0.8);
+	border: 10px solid rgba(124, 168, 137, 0.8);
 	cursor: pointer;
 	/*background-color: black;*/
 }
 
-/*all p's contained in h2 get htis sytling*/
+/*all p's contained in h4 get this sytling*/
 h4 p{
 	color: yellow;
 	text-align: center;
@@ -28,40 +29,69 @@ h4 p{
 	cursor: pointer;
 
 }
-/* all p elements that are a parent of h2 get this style*/
-h3 > p{
-	color: purple;
-	text-align: center;
+/* all p elements that are a parent of div get this style*/
+div > p{
+	color: white;
+	text-align: right;
+	border: 10px solid rgb(255, 192, 252);
 	cursor: help;
 }
-/* select any p element that comes after a h6 element*/
-h6 + p{
+/* select any p element that comes after a h6 element and when hover*/
+h6 + p:hover{
 	color: red;
-	text-align: center;
+	text-align: left;
+	border: 5px solid rgba(255,176,170,0.5);
 	cursor: wait;
 }
+/*the custome emoji cursor doesn't work*/
 .custom {
-  cursor: url(emoji.jpg), auto;
+  cursor: url(../IMG/emoji.jpg), auto;
 }
-
+/*apply workd !important breaks all rules of cascading*/ 
 p{
-	color:pink;
+	color:purple /*!important*/ ;
 }
 
-/*cascading p gets overwritten from pink to black*/
+/*cascading p gets overwritten from purple to black*/
+/*important breaks rules of cascading style sheets*/
 p{
 	color:black;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Redressed', cursive;
+	font-size: 30px;
+}
+/* everything in div is floated around the picture- just use with images not elements does some funny things*/
+img{
+	float: left;
+}
+
+footer{
+	color: Purple;
+	font-size: 40px;
+	clear:both;
+	text-align:center;
 }
 
 li{
+	color:yellow;
 	list-style-type: none;
 	display: inline-block;
 }
-.webtext{
+
+/*webtest last child- last element styled only*/
+.webtext:last-child{
 	border: 5px dashed green;
 	text-align: center;
 
 }
+
+/*webtest first child- last element styled only*/
+.webtext:first-child{
+	border: 5px solid yellow;
+	text-align: left;
+
+}
+
 /*active is for the webtext class*/
 .active{
 	color: red;
@@ -69,7 +99,8 @@ li{
 
 }
 #div1{
-	background-color: rgba(0, 0, 216, 0.2);
+	background-color: rgba(235, 252, 2, 0.2);
+	border: 10px solid black;
 
 }
 
@@ -78,3 +109,4 @@ li{
 	border: 10px solid rgba(0, 0, 255, 1);
 
 }
+
