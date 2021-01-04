@@ -2,12 +2,34 @@
 <html>
 <head>
   <title>Layout Master</title>
-  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/WebLayout.css">
 </head>
 <body>
-  <div class="zone green">Header</div>
-  <div class="zone red">Cover</div>
-  <div class="zone blue">Project Grid</div>
-  <div class="zone yellow">Footer</div>
+  <!-- Nav Bar - Flex (often- top navigation links top- contact right edge)-->
+  <nav class="zone green">
+    <ul class="main-nav">
+      <li><a href="">About</a></li>
+      <li><a href="">Products</a></li>
+      <li><a href="">Our Team</a></li>
+      <li class="push"><a href="">Contacts</a></li>
+    </ul>
+  </nav>
+  <!-- Cover - Flex-->
+  <div class="container zone red">Cover!!</div>
+  <!-- Portfolio - Grid-->
+  <div class="zone blue grid-wrapper">
+    <div class="box zone"><img src="../IMG/files_2.png"></div>
+    <div class="box zone"><img src="../IMG/server_2_2.png"></div>
+    <div class="box zone"><img src="../IMG/monitor_settings_2.png"></div>
+    <div class="box zone"><img src="../IMG/server_3.png"></div>
+    <div class="box zone"><img src="../IMG/data_storage_2_2.png"></div>
+    <div class="box zone"><img src="../IMG/monitor_coding_2.png"></div>
+    <div class="box zone"><img src="../IMG/desktop_analytics_2.png"></div>
+    <div class="box zone"><img src="../IMG/server_safe_2.png"></div>
+  </div>
+  
+  </div>
+  
+  <footer class="zone yellow">Footer</footer>
 </body>
 </html>
