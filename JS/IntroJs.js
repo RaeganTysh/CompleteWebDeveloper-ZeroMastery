@@ -1,4 +1,5 @@
-/*4 + 3;
+/*JS basics*/
+4 + 3;
  
 if (4+3 === 7) {
     alert("You\'re smart");
@@ -12,10 +13,10 @@ function sayHello () {
     console.log("hello");
 }
 sayHello();
-*/
+
 
 /*annonymous function*/
-/*var sayBye = function() {
+var sayBye = function() {
     console.log("Bye");
 }
 sayBye();
@@ -27,12 +28,12 @@ function sing() {
 sing();
 
 /*the power of arguments- allow us not to repeat our self and be more etensabile*/
-/*function sing(song) {
+function sing(song) {
     console.log (song);  
 }
 sing("lad dee dah");
 sing("helllllooooooo");
-sing("backstreets back alright");*/
+sing("backstreets back alright");
 
 /*need to use a return function if not will get undefined- soon as you return function exits!*/
 /*function multiply(a, b) {
@@ -83,8 +84,9 @@ user.favoriteFood = "spinach";
 console.log(user);
 console.log(user.spells);
 console.log(user.spells[1]);
+/* a function inside and object is called a method (shout is a method of user) */
 console.log(user.shout());
-
+/*console is an object property  log is the value*/ 
 
 /* array of objects */
 
@@ -100,5 +102,7 @@ var list3 = [
 ]; 
 console.log(list3);
 console.log(list3[0].password);
+
+/*Null- there is nothing in this object */
 
 
