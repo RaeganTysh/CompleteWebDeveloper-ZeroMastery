@@ -27,6 +27,8 @@ var newsfeed = [
 
 var userNamePrompt = prompt("what's you username");
 var passwordPrompt = prompt("what's your password?");
+signIn(userNamePrompt, passwordPrompt);
+
 
 /*userNamePrompt/passwordPrompt are the arguments for user and pass in isUserValid &signIn function*/
 
@@ -40,16 +42,6 @@ function isUserValid(user, pass) {
     return false;
 }
 
-/*function signIn(user, pass) {
-    for (var i = 0; i < database.length; i++) {
-        if (database[i].username === user &&
-            database[i].password === pass) {
-            console.log(newsfeed); tess
-        } else {
-            alert("Sorry, wrong username and password");
-        }
-    }
-}*/
 
 /* will show true or false in console log*/
 function signIn(user, pass) {
@@ -61,13 +53,3 @@ function signIn(user, pass) {
     }
 }
 
-/*function signIn(user, pass) {
-    if (user === database[0].username && 
-        pass === database[0].password) {
-            console.log (newsfeed);
-    } else {
-        alert("Sorry, wrong username and password!");
-    }
-}*/
-/*userNamePrompt/passwordPrompt are the arguments for user and pass in signIn function*/
-signIn(userNamePrompt, passwordPrompt);
