@@ -29,14 +29,23 @@ var userNamePrompt = prompt("what's you username");
 var passwordPrompt = prompt("what's your password?");
 
 function signIn(user, pass) {
+    for (var i=0; i < database.length; i++) {
+        if(database[i].username === user && 
+            database[i].password === pass){
+                console.log(newsfeed);
+        }else {
+            alert("Sorry, wrong username and password");
+        }
+    }
+}
+
+/*function signIn(user, pass) {
     if (user === database[0].username && 
         pass === database[0].password) {
             console.log (newsfeed);
     } else {
         alert("Sorry, wrong username and password!");
     }
-}
+}*/
 /*userNamePrompt/passwordPrompt are the arguments for user and pass in signIn function*/
 signIn(userNamePrompt, passwordPrompt);
-
-
