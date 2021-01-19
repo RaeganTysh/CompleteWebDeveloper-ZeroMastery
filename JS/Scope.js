@@ -68,6 +68,7 @@ function q1() {
 q1()  // alert 3
 
 //#2
+// you must first run q2() in your console to add the new value. then run q22()
 var a = 0;
 function q2() {
     a = 5;
@@ -100,13 +101,15 @@ function q4() {
     var a = "test";
     alert(a);
 }
+q4 ();      //alert test
 
 //#5
+//with var keyword, if statements do not create a new scope
 var a = 2;
 if (true) {
     var a = 5;
     alert(a);
 }
-alert(a);
+alert(a);   
 
 
