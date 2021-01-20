@@ -159,3 +159,43 @@ function moveCommand(direction) {
 //#5 return value when moveCommand("left");
 //undefined break is before the variable is defined
 //BONUS: practice makes perfect. Go and write your own switch function. It takes time to get used to the syntax!
+
+
+function weekDay(getDay) {
+    var day;
+    switch (getDay) {
+        case "1":
+            day = "Sunday";
+            break;
+        case "2":
+            day = "Monday";
+            break;
+        case "3":
+            day = "Tuesday";
+            break;
+        case "4":
+            day = "Wednesday";
+            break;
+        case "5":
+            day = "Thursday";
+            break;
+        case "6":
+            day = "Friday";
+            break;
+        case "7":
+            day = "Saturday";
+            break;
+        default:
+            day = "please enter a valid number (1-7)";
+    }
+    return day;
+}
+
+weekDay("1");
+window.weekDay('2');
+weekDay("gibberish")
+window.weekDay("3");
+weekDay("4");
+weekDay('5');
+window.weekDay("6");
+window.weekDay("7");
