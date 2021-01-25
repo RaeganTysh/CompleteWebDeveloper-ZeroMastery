@@ -17,11 +17,6 @@ button.addEventListener("click", function() {
 	console.log("click is working!!!");
 })
 
-
-
-
-
-
 function inputLength() {
 	return input.value.length;
 }

@@ -1,6 +1,6 @@
 //ECMAScript === Javascript
-//BABEL reads the JS file and transform into "form" in which browsers
-//var is old way and don't need to use it anymore always use let
+//BABEL reads the JS file and transform into "form" in which browsers can read
+//var is old way and don't need to use it anymore always use let or const
 
 //let and const (new ways of declaring variables)
 //let vs var
