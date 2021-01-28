@@ -109,8 +109,8 @@ const wizard2 = new Wizard('Shaun', 'Dark Magic');
 wizard1.introduce();
 wizard1.play();
 
-//The old way- Classickdon't use it mya encouter it
-var Palyer = function(name, type) {
+//The old way- Classical Inheritance - shouldn't use- might encounter it
+/*var Player = function(name, type) {
 	this.name = name;
 	this.type = type;
 }
@@ -128,7 +128,7 @@ wizard1.play = function() {
 
 wizard2.play = function() {
 	console.log(`WEEEEE I'm a ${this.type}`);
-}
+}*/
 
 
 
