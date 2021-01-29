@@ -37,3 +37,105 @@ power100(2);
 // Research for yourself why you get this result
 power100(10000);
 //a  number that exciids the upper or lower limit of the floating point number +/-1.79769....E308
+
+
+//ES8- more important ones string methods'padstart/padend
+'turtle'.padStart(10);              //10 spaces before/after word 
+'turtle'.padEnd(10);  
+
+//trailing functions parameter lists and calls
+const fun = (a,b,c,d,) => {
+    console.log(a);
+}
+fun(1, 2, 3, 4,);
+//why is this useful at all- large parameters line by line syntactic end comma is valid no errors
+
+Object.values
+Object.entries
+//Object.keys (old way)
+
+//not an array - can't do map, filter, reduce
+//encounter objects you don't like or work with but need to iterate over 
+let obj = { 
+    username0: 'Santa',
+    username1: 'Ruduolf',
+    username2: 'Mr. Grinch',
+
+}
+//old way iterate over object like an array for each key 'propery" grab the index "value"
+Object.keys(obj).forEach((key, index) => {
+    console.log(key, obj[key]);
+});
+
+//object.values makes it easier
+Object.values(obj).forEach(value => {
+    console.log(value);
+})
+
+//Object.entries - array of properies(key) and values- converts to an array
+Object.entries(obj).forEach(value => {
+    console.log(value);
+})
+
+//real life example- convert to usernames entries converts to array then you can map value[1](grabs 2nd item in array "Santa") value[0](grabs the first item "username0")
+//replace is a string function
+//loop through like an array 
+Object.entries(obj).map(value => {
+    return value[1] + value[0].replace('username','');
+})
+
+// Solve the below problems:
+
+// #1) Line up the Turtle and the Rabbit at the start line:
+const startLine = '     ||<- Start line';
+let turtle = '🐢';
+let rabbit = '🐇';
+startLine.padStart
+turtle = turtle.padStart(8);
+rabbit = rabbit.padStart(8);
+
+// it should look like this:
+'     ||<- Start line'
+'       🐢'
+'       🐇'
+
+// when you do:
+console.log(startLine);
+console.log(turtle);
+console.log(rabbit);
+
+
+// #2) What happens when you run turtle.trim().padEnd(9, '=') on the turtle variable
+// Read about what the second parameter does in padEnd and padStart
+turtle = turtle.trim().padEnd(9, '=');
+//trim removes the beginning/endig white space from string
+//padEnd(9, '=')  - use intial string and fill in extra space up to 9 characters with '=' entire thing in quotes
+//ex
+'abc'.padEnd(10);          // "abc       "
+'abc'.padEnd(10, "foo");   // "abcfoofoof"
+'abc'.padEnd(6, "123456"); // "abc123"
+'abc'.padEnd(1);           // "abc"
+
+
+// #3) Get the below object to go from:
+let obj = {
+  my: 'names',           //array0
+  is: 'Rudolf',
+  the: 'raindeer'
+}
+// to this:
+
+Object.entries(obj);            //converts to an array -result
+/* [
+    ["my", "names"],
+    ["is", "Rudolph"],
+    ["the", "Raindeer"],
+]*/
+
+Object.entries(obj).map(value => value.join(" "));      //converts to one array
+// ["my names", "is Rudolph", "the Raindeer"]
+
+Object.entries(obj).map(value => value.join(" ")).join(' ');  //converts to final string
+//'my name is Rudolf the raindeer'
+
+
