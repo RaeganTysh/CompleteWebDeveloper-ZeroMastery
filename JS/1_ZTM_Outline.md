@@ -1,12 +1,13 @@
 Zero to Mastery JS outline
 
 IntroJS- data types, comparisson operators, variables, conditionals, logical operators, functions, data structures (objects, arrays) 
-
+Loops- for, while, do while, forEach
+		advanced- for of(iterable-stings and arrays) for in(loops over enumerable properties of objects)- some caveats and exceptions	
 Scope- Root Scope, window object, parent/child scope
 Control Flow - Ternary, Boolean, Conditional, Switch operators
 
 Functions- Basic JS, declaration, injvoking, assigning, methods
-			Advanced- arrow, scope, closures, currying, compose, functional purtiy (deterministic, side effects ect)
+			Advanced- arrow, scope, closures, currying, compose, functional purity (deterministic, side effects ect)
 Arrays-
 Objects-
 PassByValue_PassByReference & Type Coercion
