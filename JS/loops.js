@@ -182,7 +182,7 @@ biggestNumberInArray(array2);
 biggestNumberInArray(array3);
 
 
-}
+
 
 
 // Question #2:
