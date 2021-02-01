@@ -130,5 +130,7 @@ wizard2.play = function() {
 	console.log(`WEEEEE I'm a ${this.type}`);
 }*/
 
+//Pass by Value vs Pass by Reference
+
 
 
