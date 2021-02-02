@@ -15,3 +15,11 @@ console.log('3');                   //and back to the call stack takes time
 
 
 //CALL STACK
+//WEB API
+//CALLBACK QUEUE
+//EVENT LOOP
+
+//create a click and are listening for it and then run the callback function
+element.addEventListener('click', () => {
+    console.log('click');
+})

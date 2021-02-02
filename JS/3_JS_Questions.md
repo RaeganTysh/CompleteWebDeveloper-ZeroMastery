@@ -9,7 +9,7 @@ What is a program - allocate memory, parse and execute scripts (read and run com
 JavaScript Runtime Environment (includes) - JS (Memory heap and callstack)
                                 - Web API's (DOM (document), AJAX (XMLHttpRequest), Timeout(seTimeout)) 
                                 -EventLoop - checks to see if callstack is empty if yes checks the callback queue
-                                -Callback Queue - on click/on Load/on Done                            
+                                -Callback Queue - onClick/onLoad/onDone                            
 
 
 //What is the difference between synchronous and asychonous

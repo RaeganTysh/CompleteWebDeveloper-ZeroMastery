@@ -91,12 +91,12 @@ let will_pokemon = {
         weight: 6,
         power: 'lightning',
         friend: { 
-            charizard: {
+            /*charizard: {
                 species: 'Dragon Pokemon',
                 height: 1.7,
                 weight: 90.5,
                 power: 'fire'
-            }
+            }*/
         }
     }
 }
@@ -110,10 +110,11 @@ let andrei_pokemon = {
     }
 }
 
-if (andrei_pokemon?.raichu && will_pokemon?.pikachu?.friend?.charizard) {
+if (andrei_pokemon?.raichu && will_pokemon?.pikachu?.friend?.charizard) {  //if either of the pokemons has a friend named chaizard then...
         console.log('fight!')
     } else {
         console.log('walk away...')
+        
     }
 
 
