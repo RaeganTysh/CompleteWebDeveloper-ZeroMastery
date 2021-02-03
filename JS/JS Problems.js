@@ -17,26 +17,27 @@ const q1_arrString = [1, "2", "3", 2];
 
 function cleanRoom(array) {
     
-    let sortedArray = array.sort((a, b) => a - b);
+    let sortedArray = array.sort((a, b) => a - b);            //this works for first part of question
     let temp = []; //allocate memeory and where duplicates are stored temporarily
     let subArray = [];
     let cleanArr = [];
     let arrString = sortedArray.filter(item => typeof item === "string");
-    //let arrNum = sortedArray.filter(item => typeof item === "number");
+    let arrNum = sortedArray.filter(item => typeof item === "number");
 
-    for (let i = 0; i < sortedArray.length; i++) {
-        if (sortedArray[i] === sortedArray[i + 1]) {        //if index of current equals index of next ADD it to temp array
-            temp.push(sortedArray[i])
-        } else if (sortedArray[i] === sortedArray[i - 1]) { //make sure to chekc/push first value as well
-            temp.push(sortedArray[i]);                      //if index of current equal index of previous push to temp array
+    for (let i = 0; i < arrNum.length; i++) {
+        if (arrNum[i] === arrNum[i + 1]) {        //if index of current equals index of next ADD it to temp array
+            temp.push(arrNum[i])
+        } else if (arrNum[i] === arrNum[i - 1]) { //make sure to chekc/push first value as well
+            temp.push(arrNum[i]);                      //if index of current equal index of previous push to temp array
             subArray.push(temp);                            //push temp array to subArray to clear temp array
             temp = [];                                      //clear temp array for next loop
-        } else if (sortedArray[i] !== sortedArray[i]) {
-            subArray.push(sortedArray[i]);
+        } else if (arrNum[i] !== arrNum[i + 1]) {
+            subArray.push(arrNum[i]);
         }
     }
-cleanArr = cleanArr.concat([subArray], [arrString])
-//if arrString is empty then remove array
+
+    cleanArr = cleanArr.concat([subArray], [arrString])
+    //if arrString is empty then remove array
     if (cleanArr[1][0]=== undefined){
         cleanArr.pop()
     }
@@ -44,21 +45,9 @@ cleanArr = cleanArr.concat([subArray], [arrString])
 }
 
 console.log("\t array with numbers =>", cleanRoom(q1_array));
+//should return: [[1,1,1,1],[2,2,2], 4,5,10,[20,20], 391, 392,591].
 console.log("\t array with strings =>", cleanRoom(q1_arrString));
+//should return [[1,2], ["2", "3"]]
 
 
 
-/*let counter =0;
-
-function cleanRoom(array){
-    array.forEach(item => {
-        if (a = item);{
-            a = [item];
-        }
-    })
-    return a;
-}
-cleanRoom(array);*/
-
-
-//Bonus: Make it so it organizes strings differently from number types. i.e. [1, "2", "3", 2] should return [[1,2], ["2", "3"]]
