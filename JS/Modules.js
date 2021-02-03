@@ -36,6 +36,8 @@ export default function add() {                 //export one thing
  return a + b;
 
 }
+
+//export allows the variable wtihin it available 
 //js2
 import {add} from '.add';                   //import, destructing and grabbing add (multiple items with brackets)
 //or
@@ -55,3 +57,29 @@ module.exports = {
         filename: 'bundle.js'                   //HTML script tage: <script src="bundle.js"></script> all js files bundled into this one file
     }
 }
+
+
+//modules group variable sand functions that make sense together (module scope)- can share variables between funciton in the module
+//unlike function scopes module scopes can make theri variables available to  to other modules as well (say explicitly which variable/classses/functions)- called export
+
+
+//-----Attempt to add module functionality to JS----
+//CommonJS (CJS) -what node.js has used historically - synchronous- (3 instances done all at once)
+//EcmaScript modules (ESM)- newer system- Asynchronous (3 instances done seperately)
+
+//---How it works--- 
+//Entry point - main.js, which contains may other js files
+//dependancies of the main.js with other js files come form the import statements
+//Browser can't use those files- parses the instructions(code) into data structures) module records
+//module records are turned into module instances which combine the code(instructions) and state(all the variables values)
+
+//ES Module Spec - 3 instances (Construction, Instantiation, Evaluation)- considered asynchronous because it's done in steps
+//construction- find, download and parse files into moduele records
+//Instatiationn- allocate memory (not assign) for exported values and link
+//Evaluation - run code and assign variables-(actual values)
+//doesn't define how you get the files
+
+//The loader - fetches the files -depends on the platforms (browsers- HTML spec)
+            //- controls how the modules are downloaded Parse.module. Module.Instatiate & Module.Evaluate
+//Construction phase - where to download the file, fetch(URL or filesystem), parse file into module record            
+
