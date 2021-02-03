@@ -13,13 +13,16 @@ console.log(sortedArray4);
 
 //Q1 Solution
 const q1_array = [1, 2, 4, 591, 392, 391, 2, 5, 10, 2, 1, 1, 1, 20, 20];
-const q1_arrString = 
-function cleanRoom(arr) {
+const q1_arrString = [1, "2", "3", 2];
 
+function cleanRoom(array) {
     
-    let sortedArray = arr.sort((a, b) => a - b);
+    let sortedArray = array.sort((a, b) => a - b);
     let temp = []; //allocate memeory and where duplicates are stored temporarily
     let subArray = [];
+    let cleanArr = [];
+    let arrString = sortedArray.filter(item => typeof item === "string");
+    //let arrNum = sortedArray.filter(item => typeof item === "number");
 
     for (let i = 0; i < sortedArray.length; i++) {
         if (sortedArray[i] === sortedArray[i + 1]) {        //if index of current equals index of next ADD it to temp array
@@ -31,12 +34,17 @@ function cleanRoom(arr) {
         } else if (sortedArray[i] !== sortedArray[i]) {
             subArray.push(sortedArray[i]);
         }
-        
-      }
-      return cleanRoom;
+    }
+cleanArr = cleanArr.concat([subArray], [arrString])
+//if arrString is empty then remove array
+    if (cleanArr[1][0]=== undefined){
+        cleanArr.pop()
+    }
+    return cleanArr;
 }
 
-
+console.log("\t array with numbers =>", cleanRoom(q1_array));
+console.log("\t array with strings =>", cleanRoom(q1_arrString));
 
 
 
