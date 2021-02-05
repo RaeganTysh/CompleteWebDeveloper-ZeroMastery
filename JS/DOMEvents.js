@@ -115,9 +115,14 @@ button.addEventListener("click", function () {
 })
 
 //how to add event listener for enter key
-/*input.addEventListener("keypress", function() {
-	if(inputLenght() > 0 && keydown === 13) {  //what is the code for this??
+input.addEventListener("keyup", function() {
+	if (inputLength() > 0 && KeyboardEvent.code === 13) {  //what is the code for this??
 		createListElement();
 	}
 })
- keydown*/
+ 
+//do not work!!
+//if (inputLength() > 0 && charCodeAt === 13)
+//if (inputLength() > 0 && keyCode === 13)
+//if (inputLength() > 0 && keydown) 
+//if (inputLength() > 0 && event.keyCode === 13)
