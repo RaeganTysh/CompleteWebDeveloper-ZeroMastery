@@ -47,17 +47,17 @@ var ul = document.querySelector("ul");*/
 	}
 }*/
 
-function addListAfterClick() {
+/*function addListAfterClick() {
 	if (inputLength() > 0) {
 		createListElement();
 	}
-}
+}*/
 
-function addListAfterKeypress(event) {
+/*function addListAfterKeypress(event) {
 	if (inputLength() > 0 && event.keyCode === 13) {
 		createListElement();
 	}
-}
+}*/
 
 //button.addEventListener("click", addListAfterClick);
 
@@ -107,22 +107,20 @@ function createListElement() {
 	}
 }
 
-button.addEventListener("click", function () {
-	if (inputLength() > 0) {				//use function
-		var li = document.createElement("li");
-		createListElement();				//use function   
-	}
-})
-
-//how to add event listener for enter key
-input.addEventListener("keyup", function() {
-	if (inputLength() > 0 && KeyboardEvent.code === 13) {  //what is the code for this??
+function addListAfterClick() {
+	if (inputLength() > 0) {
 		createListElement();
 	}
-})
- 
-//do not work!!
-//if (inputLength() > 0 && charCodeAt === 13)
-//if (inputLength() > 0 && keyCode === 13)
-//if (inputLength() > 0 && keydown) 
-//if (inputLength() > 0 && event.keyCode === 13)
+}
+
+function addListAfterKeypress(event) {
+	if (inputLength() > 0 && event.keyCode === 13) {
+		createListElement();
+	}
+}
+
+button.addEventListener("click", addListAfterClick);
+
+input.addEventListener("keypress", addListAfterKeypress)
+
+
