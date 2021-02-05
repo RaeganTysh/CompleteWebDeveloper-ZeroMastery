@@ -17,4 +17,6 @@ ES10- flat, flatMap, trimStart, trimEnd, fromEntries, Object.Entries, Try Catch 
 ES2020- BigInt, Nullish coalescing Operator, Optional Chain Operator, Promise.allSettled, globalThis,
 
 Debugging - 
-
+Modules- code reusibility and pollution of global namespace(collisions with teammastes)
+		- script tags (order (lack of dependancy resolution) copy and paste script tag to each html page)
+		- IIFE  (imediately invoked function execution)

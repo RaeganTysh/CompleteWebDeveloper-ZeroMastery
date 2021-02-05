@@ -17,17 +17,24 @@ button.addEventListener("click", function() {
 	console.log("click is working!!!");
 })
 
+//*adds item "test" to bottom of list
+/*button.addEventListener("click", function() {
+	var li = document.createElement("li");   
+	li.appendChild(document.createTextNode("testing"))
+	ul.appendChild(li);
+})*/
+
 function inputLength() {
 	return input.value.length;
 }
 
-/*add text to bottom of list */
+/*add input value to text to bottom of list */
 function createListElement() {
-	if(input.value.length > 0) {
+	if(input.value.length > 0) {				//if input is 0 do nothing
 	var li = document.createElement("li");
 	li.appendChild(document.createTextNode(input.value));
 	ul.appendChild(li);
-	input.value = "";
+	input.value = "";					//clears the inuput value 
 	}
 }
 
