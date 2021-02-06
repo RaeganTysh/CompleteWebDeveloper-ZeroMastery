@@ -55,22 +55,25 @@ input.addEventListener("keypress", addListAfterKeypress);
 
 
 var button2 = document.getElementById("done");   //grabs element from HTML and saves it to button
-console.log(button2);
-//let done = document.querySelector(done);      //grabs class from css
+//console.log(button2);  //test
+//let done = document.querySelector(done);      
 let toggleOn = false;
 /*let buttonStates = {
     toggleOn= "true";
     toggleOn
 }*/
 
+//set up a Loop?
 button2.addEventListener("click", () => {     //set up to listen for click event
    
     toggleOn = !toggleOn;       //flips the current Boolean value off toggleOn from false to true
     if(toggleOn === true){
-        button2.style.display.textDecoration = "line-through";
+        console.log(toggleOn);
+        button2.style.textDecoration = "line-through";
+        button2.style.color = "red";
     }else {
         button2.style.textDecoration = "none";
-        //button.style.display = "inline-block";
+        
     }
 
     //button.innerText = buttonStates[button.innerText];
