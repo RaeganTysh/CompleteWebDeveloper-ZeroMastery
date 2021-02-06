@@ -13,9 +13,10 @@ var body = document.getElementById("gradient"); //gradient is associated with bo
 //we want to listen to an event 
 //click, mousemovement, keypress- also input
 //set a function to pick up the user input
+
 color1.addEventListener("input", function() {
-    console.log(color1.value);
-    body.style.backround =
+    //console.log(color1.value);
+    body.style.background =
      "linear-gradient(to right, "
       + color1.value 
       + ", " 
@@ -25,8 +26,8 @@ color1.addEventListener("input", function() {
 })
 
 color2.addEventListener("input", function() {
-   console.log(color2.value);
-    body.style.backround =
+  // console.log(color2.value);
+    body.style.background =
      "linear-gradient(to right, "
       + color1.value 
       + ", " 
@@ -35,3 +36,21 @@ color2.addEventListener("input", function() {
      
 })
 
+//clean up the code
+function setGradient() {
+	body.style.background = 
+	"linear-gradient(to right, "
+	+ color1.value 
+	+ ", " 
+	+ color2.value 
+	+ ")";
+
+	css.textContent = body.style.background + ";";
+}
+
+//color1.addEventListener("input", setGradient);  //event gets triggered automatically don't need to call function setGradient()- gets called everytime the input is selected
+
+//color2.addEventListener("input", setGradient);
+
+
+//could also use onclick or oninput in html to call the function
