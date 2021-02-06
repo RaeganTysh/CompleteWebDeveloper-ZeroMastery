@@ -1,5 +1,8 @@
 Zero to Mastery JS outline
 
+DOM- 
+
+
 IntroJS- data types, comparisson operators, variables, conditionals, logical operators, functions, data structures (objects, arrays) 
 Loops- for, while, do while, forEach
 		advanced- for of(iterable-stings and arrays) for in(loops over enumerable properties of objects)- some caveats and exceptions	
