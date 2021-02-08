@@ -1,11 +1,11 @@
 import React from'react';     //comment this out when using the function 
-import logo from './logo.svg';
+import logo from './logo.svg';      //react logo for ttitle tab on browser
 import './App.css';
 
 //the old way- use this for now 
-class App extends React.Component {
+class App extends React.Component {    //component must render something
   render() {
-    return (
+    return (                          //returning HTML 
       <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
