@@ -89,8 +89,25 @@ function triangleArea() {
   const a = 5;
   const b = 6;
   const c = 7;
-  const p = (a + b +c-/2 ;    //p= perimeter
+  const p = (a + b +c)/2 ;    //p= perimeter
   const area =  Math.sqrt((p*(p-a)*(p-b)*(p-c)));
   return area;
 }
-triangleArea();
+console.log(triangleArea()); //14.6969
+
+//5.Write a JavaScript program to rotate the string 'Raegan Tyshkewich' in right direction by periodically removing one letter from the end of the string and attaching it to the front. 
+ function animateString(id) {
+   const string = document.getElementById(id);      //grabs the pre element
+   console.log(string);
+   const textNode = string.childNodes[0];      //assumes no other children- grabs the string
+   console.log(textNode);                     //"Raegan Tyshkewich"
+   let text = textNode.data;                //Raegan Tyshkewich
+   console.log(text);
+
+   setInterval(() => {
+     text = text[text.length - 1] + text.substring(0, text.length - 1);
+     console.log(text);
+     textNode.data = text;
+     
+   }, 100);
+ }
