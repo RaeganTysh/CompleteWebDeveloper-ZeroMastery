@@ -60,7 +60,7 @@ function clickDate() {
     var weekday =["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var showDay= weekday[day];
     //console.log(showDay);
-    document.getElementById("dayWeek").innerHTML= showDay;
+    document.getElementById("dayWeek").innerHTML= "Today is: " + showDay;
 
    // var month = today.getMonth() + 1;  //0=Jan 11=Dec
     var month = ((today.getMonth()+1) <10 ?'0':'')+(today.getMonth()+1); //if less that 10 insert 0 otherwise  leave alone
@@ -70,6 +70,19 @@ function clickDate() {
     //console.log(date);
     var year = today.getFullYear();
     //console.log(today.getFullYear());
-    document.getElementById("date").innerHTML = month + "-" + date + "-" + year;
+    //document.getElementById("date").innerHTML = month + "-" + date + "-" + year;
+
+    var hour = ((today.getHours()) <10 ?'0':'')+ today.getHours();
+    var minute = ((today.getMinutes()) <10 ?'0':'')+ today.getMinutes();
+    var second = ((today.getSeconds()) <10 ?'0':'')+ today.getSeconds();
+    var time= today.getTime();
+    /*console.log(hour);
+    console.log(minute);
+    console.log(second);
+    console.log(time);  //milliseconds sine midnight Jan 1, 1970*/
+    
+    document.getElementById("date").innerHTML = month + "-" + date + "-" + year + " &  " + hour + ":" + minute + ":" + second;
+
+
 
 }
