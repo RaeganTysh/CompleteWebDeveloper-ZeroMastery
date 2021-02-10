@@ -46,3 +46,20 @@ var today = new Date();
 //console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
 document.getElementById("Time").innerHTML ="Current Time: "+ hour  + ": " + minute + ": " + second + prepand
 }
+
+//Write a JavaScript program to print the contents of the current window.
+function printPage(){
+    window.print();         //opens the print window in JS
+
+}
+
+//Write a JavaScript program to get the current date. onclick
+function clickDate() {
+    var today = new Date();
+    var day = today.getDay();  //index 2
+    var weekday =["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var showDay= weekday[day];
+
+    console.log(showDay);
+    document.getElementById("dayWeek").innerHTML= showDay;
+}
