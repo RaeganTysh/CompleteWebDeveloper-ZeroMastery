@@ -60,4 +60,9 @@ console.log("\t array with strings =>", cleanRoom(q1_arrString));
 //Question 3: Write a function that converts HEX to RGB. Then Make that function auto-dect the formats so that if you enter HEX color format it returns RGB and if you enter RGB color format it returns HEX.
 
 
-
+//W3 Schools 96%
+Math.round(7.25);
+Math.max(5, 2);
+w2= window.open("https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS");
+navigator.appName;
+Boolean(10 > 9);

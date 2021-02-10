@@ -1,12 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-//import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react';      //name of the package
+import ReactDOM from 'react-dom';  //what screen we are rendering too react-native(mobile)
+import './index.css';         //needs a source location            
+//import App from './App';      //assumes .js
+import reportWebVitals from './reportWebVitals';  //use to be regiserServiceWorker
 
 
 //old way
-ReactDOM.render(<h1>Hello World</h1>, document.getElementById('root'))
+//ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<h1>Hello World</h1>, document.getElementById('root'))  //uses the html tag
 
 //new way
 /*ReactDOM.render(

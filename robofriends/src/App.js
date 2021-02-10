@@ -1,4 +1,4 @@
-import React from'react';     //comment this out when using the function 
+import React from'react';     //comment this out when using the function method 
 import logo from './logo.svg';      //react logo for ttitle tab on browser
 import './App.css';
 
