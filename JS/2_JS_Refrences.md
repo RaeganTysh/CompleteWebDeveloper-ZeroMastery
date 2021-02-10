@@ -39,6 +39,7 @@ JAVASCRIPT LOGICAL OPERATORS
 &&
 ||
 !
+?           ternary operator comparisson operator
 
 JAVASCRIPT FUNCTIONS
 -----------------

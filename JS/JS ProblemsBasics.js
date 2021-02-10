@@ -1,4 +1,4 @@
-//Write a JavaScript program to display the current day and time in the following format. 
+//1. Write a JavaScript program to display the current day and time in the following format. 
 //Today is : Tuesday.
 //Current time is : 10 PM : 30 : 38
 //run in console
@@ -47,13 +47,13 @@ var today = new Date();
 document.getElementById("Time").innerHTML ="Current Time: "+ hour  + ": " + minute + ": " + second + prepand
 }
 
-//Write a JavaScript program to print the contents of the current window.
+//2.Write a JavaScript program to print the contents of the current window.
 function printPage(){
     window.print();         //opens the print window in JS
 
 }
 
-//Write a JavaScript program to get the current date. mm-dd-yy 
+//3.Write a JavaScript program to get the current date. mm-dd-yy 
 function clickDate() {
     var today = new Date();
     var day = today.getDay();  //index 2
@@ -82,7 +82,15 @@ function clickDate() {
     console.log(time);  //milliseconds sine midnight Jan 1, 1970*/
     
     document.getElementById("date").innerHTML = month + "-" + date + "-" + year + " &  " + hour + ":" + minute + ":" + second;
-
-
-
 }
+
+//4.Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
+function triangleArea() {
+  const a = 5;
+  const b = 6;
+  const c = 7;
+  const p = (a + b +c-/2 ;    //p= perimeter
+  const area =  Math.sqrt((p*(p-a)*(p-b)*(p-c)));
+  return area;
+}
+triangleArea();
