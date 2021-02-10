@@ -53,13 +53,23 @@ function printPage(){
 
 }
 
-//Write a JavaScript program to get the current date. onclick
+//Write a JavaScript program to get the current date. mm-dd-yy 
 function clickDate() {
     var today = new Date();
     var day = today.getDay();  //index 2
     var weekday =["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var showDay= weekday[day];
-
-    console.log(showDay);
+    //console.log(showDay);
     document.getElementById("dayWeek").innerHTML= showDay;
+
+   // var month = today.getMonth() + 1;  //0=Jan 11=Dec
+    var month = ((today.getMonth()+1) <10 ?'0':'')+(today.getMonth()+1); //if less that 10 insert 0 otherwise  leave alone
+    //console.log(month);
+    var date = ((today.getDate()) <10 ?'0':'')+today.getDate();  //1= 1st day of month
+    //console.log(today.getDate())
+    //console.log(date);
+    var year = today.getFullYear();
+    //console.log(today.getFullYear());
+    document.getElementById("date").innerHTML = month + "-" + date + "-" + year;
+
 }
