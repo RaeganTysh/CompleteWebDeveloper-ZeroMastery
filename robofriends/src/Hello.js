@@ -10,20 +10,20 @@ class Hello extends Component {
                 <h1>Hello World</h1>
                 {/*<p>Welcome to React</p>*/}
                 <p>{this.props.greeting}</p>    {/*this comes from the index.js greeting props*/}
-            /*</div>
+            </div>
         );
     }
 }
 
-//same as this function
-const Hello = (props) => {
+//The above expression is the same as this function
+/*const Hello = (props) => {
     return (
         <div className='f1 tc'>
             <h1>Hello World</h1>
             <p>{props.greeting}</p>
         </div>
     );
-}
+}*/
 
 
 export default Hello;
