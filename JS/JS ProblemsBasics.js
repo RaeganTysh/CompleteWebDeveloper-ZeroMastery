@@ -104,10 +104,41 @@ console.log(triangleArea()); //14.6969
    let text = textNode.data;                //Raegan Tyshkewich
    console.log(text);
 
-   setInterval(() => {
+   setInterval(() => {   //executes multiple times per interval 2 seconds
      text = text[text.length - 1] + text.substring(0, text.length - 1);
      console.log(text);
      textNode.data = text;
      
-   }, 100);
+   }, 200);
+
+   //clearInterval(id);
  }
+ //not working- 
+function stopInterval(id) {
+   clearInterval(id);
+
+ }
+
+// JavaScript conditional statements and loops
+//Write a JavaScript program that accept three integers and display the smallest, larges, put in order.
+function largest() {
+  const a = getElementById('int1');
+  const b = getElementById('int2');
+  const c = getElementById('int3');
+
+  if(parseInt.a > parseInt.b & parseInt.a > parseInt.c)
+  {
+    document.getElementById('answer').innerHTML = "The largest integer is:" + a;
+  }
+  else
+      if(parseInt.b > parseInt.a & parseInt.b > parseInt.c)
+      {
+       document.getElementById('answer').innerHTML = "The largest integer is:" + b; 
+      }
+  else 
+  {
+    document.getElementById('answer').innerHTML = "The largest integer is:" + c; 
+
+  }
+  
+}
