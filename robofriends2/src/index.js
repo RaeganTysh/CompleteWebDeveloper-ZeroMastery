@@ -5,5 +5,10 @@ import Card from './Card';
 import reportWebVitals from './reportWebVitals';  
 import 'tachyons';    
 
-ReactDOM.render(<Card />, document.getElementById('root'));  
+ReactDOM.render(
+<div>
+    <Card />
+    <Card />
+    <Card />
+</div>, document.getElementById('root'));  
 reportWebVitals();
