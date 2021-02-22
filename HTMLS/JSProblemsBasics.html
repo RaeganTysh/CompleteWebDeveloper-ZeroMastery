@@ -12,18 +12,39 @@
 </head>
 
 <body onload="getDayTime();">
-    <p id="Day">Day</p>
-    <p id="Time">Time</p>
-    <p>Print the Current page</p>
-    <button onclick="printPage();">Print this page</button>
-    <p id="dayWeek">Click for date & time</p>
-    <p id="date"></p><button onclick="clickDate();">mm-dd-yyyy & hh:mm:ss</button>
+    <h2>JS Basics</h2>
+    <div>
+        <p id="Day">Day</p>
+        <p id="Time">Time</p>
+        <!--<p>Print the Current page</p> -->
+        <button onclick="printPage();">Print this page</button>
+        <p id="dayWeek">Click for date & time</p>
+        <p id="date"></p><button onclick="clickDate();">mm-dd-yyyy & hh:mm:ss</button>
+        </br>
+        </br>
+        <!-- Q5-->
+        <button onclick="animateString('target')">Click for animation</button>
+        <button onclick="stopInterval('target');">Stop animation</button>
+        <pre id="target">Raegan Tyshkewich </pre>
+        <!--pre =preserves spaces and line breaks-->
+    </div>
 
+    <h2>JS Conditional Statements and Loops</h2>
+    <div>
+    <p>Write a JavaScript program that accept three integers and display the smallest, largest and put in order.</p>
+    <!--<label>First Integer</label>-->
+   
+    <!-- <label>Second Integer</label> -->
+    <input type="text" id="int2" placeholder="Integer 2">
+    <!-- <label>Third Integer</label> -->
+    <input type="text" id="int3" placeholder="Integer 3">
+    <input type="text" id="int1" placeholder="Integer 1">
+    <button onclick="largest();">Find largest</button>
+    <button onclick="smallest();">Find smallest</button>
+    <button onclick="order();">Numerical order</button>
+    <p id="answer"></p>
+</div>
 
-
-    <button onclick="animateString('target')">Click for animation</button>
-    <pre id="target">Raegan Tyshkewich </pre>
-    <!--pre =preserves spaces and line breaks-->
 
 
 
