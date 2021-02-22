@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';  //what screen we are rendering too react-nati
 import './index.css';         //needs a source location            
 //import App from './App';      //assumes .js
 import Hello from './Hello';
-import reportWebVitals from './reportWebVitals';  //use to be regiserServiceWorker
-//import registerServiceWorker from './registerServiceWorker';
+import reportWebVitals from './reportWebVitals';  //use to be regiserServiceWorker previous CRA
+import 'tachyons';    //npm package for CSS
+
 
 
 
@@ -12,7 +13,7 @@ import reportWebVitals from './reportWebVitals';  //use to be regiserServiceWork
 //ReactDOM.render(<App />, document.getElementById('root'));  //uses the App.js above and registerServiceWorker above
 //registerServiceWorker();
 
-ReactDOM.render(<Hello />, document.getElementById('root'));  //uses the Hello.js above and registerServiceWorker above
+ReactDOM.render(<Hello greeting= {'Hello React Ninja'} />, document.getElementById('root'));  //uses the Hello.js above and registerServiceWorker above
 reportWebVitals();
 
 //ReactDOM.render(<h1>Hello World</h1>, document.getElementById('root'))  //uses the html tag
