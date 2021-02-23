@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card';
-
-const CardList = ({ robots }) => {
+//this is one way to write it 
+/*const CardList = ({ robots }) => {
     const cardArray = robots.map((user, i) => {
         return (
             <Card
@@ -19,7 +19,32 @@ const CardList = ({ robots }) => {
         </div>
 
     );
+}*/
+
+
+const CardList = ({ robots }) => {
+    return (
+        <div>
+            {
+                //because everything in these brackets is JS can be written this way 
+                robots.map((user, i) => {
+                    return (
+                        <Card
+                            key={i}
+                            id={robots[i].id}
+                            name={robots[i].name}
+                            email={robots[i].email}
+                        />
+                    );
+                })
+
+            }
+
+        </div>
+
+    );
 }
+
 
 export default CardList;
 
