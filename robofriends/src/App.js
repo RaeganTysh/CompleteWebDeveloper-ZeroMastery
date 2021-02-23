@@ -1,5 +1,5 @@
 import React from'react';     //comment this out when using the function method 
-import logo from './logo.svg';      //react logo for ttitle tab on browser
+import logo from './logo.svg';      //react logo for title tab on browser
 import './App.css';
 
 //the old way- use this for now 
