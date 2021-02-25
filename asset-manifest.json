@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/CompleteWebDeveloper-ZeroMastery/static/css/main.cfd6f889.chunk.css",
-    "main.js": "/CompleteWebDeveloper-ZeroMastery/static/js/main.270ea82f.chunk.js",
-    "main.js.map": "/CompleteWebDeveloper-ZeroMastery/static/js/main.270ea82f.chunk.js.map",
-    "runtime-main.js": "/CompleteWebDeveloper-ZeroMastery/static/js/runtime-main.a2d0f715.js",
-    "runtime-main.js.map": "/CompleteWebDeveloper-ZeroMastery/static/js/runtime-main.a2d0f715.js.map",
-    "static/css/2.31461e4f.chunk.css": "/CompleteWebDeveloper-ZeroMastery/static/css/2.31461e4f.chunk.css",
-    "static/js/2.16daa031.chunk.js": "/CompleteWebDeveloper-ZeroMastery/static/js/2.16daa031.chunk.js",
-    "static/js/2.16daa031.chunk.js.map": "/CompleteWebDeveloper-ZeroMastery/static/js/2.16daa031.chunk.js.map",
-    "static/js/3.ab82cfcb.chunk.js": "/CompleteWebDeveloper-ZeroMastery/static/js/3.ab82cfcb.chunk.js",
-    "static/js/3.ab82cfcb.chunk.js.map": "/CompleteWebDeveloper-ZeroMastery/static/js/3.ab82cfcb.chunk.js.map",
-    "index.html": "/CompleteWebDeveloper-ZeroMastery/index.html",
-    "static/css/2.31461e4f.chunk.css.map": "/CompleteWebDeveloper-ZeroMastery/static/css/2.31461e4f.chunk.css.map",
-    "static/css/main.cfd6f889.chunk.css.map": "/CompleteWebDeveloper-ZeroMastery/static/css/main.cfd6f889.chunk.css.map",
-    "static/js/2.16daa031.chunk.js.LICENSE.txt": "/CompleteWebDeveloper-ZeroMastery/static/js/2.16daa031.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/CompleteWebDeveloper-ZeroMastery/static/media/SEGA.47b4bfa9.woff"
+    "main.css": "/CompleteWebDeveloper-ZeroMastery/robofriends2/static/css/main.3e633073.chunk.css",
+    "main.js": "/CompleteWebDeveloper-ZeroMastery/robofriends2/static/js/main.270ea82f.chunk.js",
+    "main.js.map": "/CompleteWebDeveloper-ZeroMastery/robofriends2/static/js/main.270ea82f.chunk.js.map",
+    "runtime-main.js": "/CompleteWebDeveloper-ZeroMastery/robofriends2/static/js/runtime-main.3c81fbb3.js",
+    "runtime-main.js.map": "/CompleteWebDeveloper-ZeroMastery/robofriends2/static/js/runtime-main.3c81fbb3.js.map",
+    "static/css/2.31461e4f.chunk.css": "/CompleteWebDeveloper-ZeroMastery/robofriends2/static/css/2.31461e4f.chunk.css",
+    "static/js/2.16daa031.chunk.js": "/CompleteWebDeveloper-ZeroMastery/robofriends2/static/js/2.16daa031.chunk.js",
+    "static/js/2.16daa031.chunk.js.map": "/CompleteWebDeveloper-ZeroMastery/robofriends2/static/js/2.16daa031.chunk.js.map",
+    "static/js/3.ab82cfcb.chunk.js": "/CompleteWebDeveloper-ZeroMastery/robofriends2/static/js/3.ab82cfcb.chunk.js",
+    "static/js/3.ab82cfcb.chunk.js.map": "/CompleteWebDeveloper-ZeroMastery/robofriends2/static/js/3.ab82cfcb.chunk.js.map",
+    "index.html": "/CompleteWebDeveloper-ZeroMastery/robofriends2/index.html",
+    "static/css/2.31461e4f.chunk.css.map": "/CompleteWebDeveloper-ZeroMastery/robofriends2/static/css/2.31461e4f.chunk.css.map",
+    "static/css/main.3e633073.chunk.css.map": "/CompleteWebDeveloper-ZeroMastery/robofriends2/static/css/main.3e633073.chunk.css.map",
+    "static/js/2.16daa031.chunk.js.LICENSE.txt": "/CompleteWebDeveloper-ZeroMastery/robofriends2/static/js/2.16daa031.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/CompleteWebDeveloper-ZeroMastery/robofriends2/static/media/SEGA.47b4bfa9.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.a2d0f715.js",
+    "static/js/runtime-main.3c81fbb3.js",
     "static/css/2.31461e4f.chunk.css",
     "static/js/2.16daa031.chunk.js",
-    "static/css/main.cfd6f889.chunk.css",
+    "static/css/main.3e633073.chunk.css",
     "static/js/main.270ea82f.chunk.js"
   ]
 }
