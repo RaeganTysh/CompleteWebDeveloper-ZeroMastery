@@ -23,6 +23,11 @@ import Card from './Card';
 
 
 const CardList = ({ robots }) => {
+//test error
+/*if (true) {
+    throw new Error('Nooooo');
+}*/
+
     return (
         <div>
             {

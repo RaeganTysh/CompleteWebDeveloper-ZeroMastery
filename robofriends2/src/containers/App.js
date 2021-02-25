@@ -5,6 +5,7 @@ import { robots } from '../robots';
 import SearchBox from '../components/SearchBox';
 import '../containers/App.css';
 import Scroll from '../components/Scroll';
+import ErrorBoundary from '../components/ErrorBoundary';
 
 
 //STATE smart components
@@ -24,7 +25,7 @@ class App extends Component {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
             .then(users => this.setState({ robots: robots }));
-              
+
     }
 
 
@@ -37,23 +38,25 @@ class App extends Component {
 
     }
     render() {
-        const {robots, searchfield} = this.state;
+        const { robots, searchfield } = this.state;
         const filteredRobots = robots.filter(robot => {
             return robot.name.toLowerCase().includes(searchfield.toLowerCase());
         })
         return (
             <div className='tc'>
-                <h1 className= 'f1'>RoboFriends</h1>
+                <h1 className='f1'>RoboFriends</h1>
                 <SearchBox searchChange={this.onSearchChange} />
                 <Scroll>
-                <CardList robots={filteredRobots} />
+                    <ErrorBoundary>
+                        <CardList robots={filteredRobots} />
+                </ErrorBoundary>
                 </Scroll>
             </div>
         );
         //console.log('render');
-        
+
     }
-    
+
 }
 
 export default App;
