@@ -24,4 +24,28 @@ promise
         throw Error
         console.log(result2);
     })                  
-    .catch(() => console.log("Errrrroooor!"));
+    .catch(() => console.log("Errrrroooor!"));  //Errrrroooooor!
+
+//Error/ Catch
+promise
+.then(result => {
+    throw Error
+    return result + '!!'
+}) 
+.then(result2 => {
+      console.log(result2);
+})                  
+.catch(() => console.log('Errrrroooor!'));
+
+//what happens
+promise
+    .then(result => result + '!')           //Stuff worked!
+    .then(result2 => result2 + '?')         //Stuff worked!?
+    .catch(() => console.log('error'))       //catch only runs if something fails in something before it  
+    .then(result3 => {
+        console.log(result3 + '!');         //Stuff worked!?!
+    })              
+    
+    
+    //Stuff worked!?!
+
