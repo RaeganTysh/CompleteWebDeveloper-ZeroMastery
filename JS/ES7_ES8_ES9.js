@@ -139,3 +139,41 @@ Object.entries(obj).map(value => value.join(" ")).join(' ');  //converts to fina
 //'my name is Rudolf the raindeer'
 
 
+//Object spread operator
+const animals = {
+    tiger: 23,
+    lion: 5, 
+    monkey: 2
+}
+
+const {tiger, ...rest} = animals;
+tiger;          //returns 23
+rest;           //returns {lion: 5, monkey: 2} 
+
+//similiar too 
+const array = [1,2,3,4,5];
+function sum (a,b,c,d, e){
+    return a + b + c + d + e;
+}
+sum(1,2,3,4,5);         //returns 15
+sum(...array);          //returns 15
+
+//able to  spread the array over the paramaters
+
+//another example with an object
+const animals = {
+    tiger: 23,
+    lion: 5, 
+    monkey: 2,
+    bird: 40
+}
+
+function objectSpread(p1, p2, p3) {
+    console.log(p1)
+    console.log(p2)
+    console.log(p3)
+}
+
+const { tiger, lion, ...rest} = animals;
+
+objectSpread(tiger, lion, rest);
