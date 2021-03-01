@@ -16,6 +16,21 @@ async function plyerStart() {
 
 }
 
+
+//Chrome was blocking fetch!! to get fetch to work had to download the CORS unblock and enable
 fetch('https://jsonplaceholder.typicode.com/users')
     .then(resp => resp.json())
     .then(data => console.log(data));
+
+
+//the same - syntactic sugar
+async function fetchUsers() {
+    const resp = await fetch('https://jsonplaceholder.typicode.com/users');
+    const data = await rsponse.json();      //response returns a promise
+    console.log(data);
+
+}    
+
+fetch('http://example.com/movies.json')
+  .then(response => response.json())
+  .then(data => console.log(data));

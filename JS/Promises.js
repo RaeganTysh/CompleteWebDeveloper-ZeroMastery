@@ -76,7 +76,7 @@ Promise.all([promise, promise2, promise3, promise4])
         console.log(values);
     })
 
-//Another example- not working
+//Chrome was blocking fetch!! to get fetch to work had to download the CORS unblock and enable
 
 const urls = [
     'https://jsonplaceholder.typicode.com/users',
@@ -128,11 +128,13 @@ Promise6.reject('failed')
 
 // #5) Use Promise.all to fetch all of these people from Star Wars (SWAPI) at the same time.
 // Console.log the output and make sure it has a catch block as well.
+//NOt working - Mixed Content: The page at 'https://jsonplaceholder.typicode.com/users' was loaded over HTTPS, but requested an insecure resource 'http://swapi.dev/api/people/1/'. This request has been blocked; the content must be served over HTTPS.
+
 const urls = [
-  'http://swapi.dev/api/people/1',
-  'http://swapi.dev/api/people/2',
-  'http://swapi.dev/api/people/3',
-  'http://swapi.dev/api/people/4'
+  'https://swapi.dev/api/people/1',
+  'https://swapi.dev/api/people/2',
+  'https://swapi.dev/api/people/3',
+  'https://swapi.dev/api/people/4'
 ]
 
 Promise.all(urls.map(url =>
