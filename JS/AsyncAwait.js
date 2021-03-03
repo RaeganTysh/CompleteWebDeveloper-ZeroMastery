@@ -108,8 +108,10 @@ const urls = [
     
     const getData = async function () {
       try{ 
-        const [users, posts, albums] = await Promise.all(urls.map(url => fetch(url).then(resp => resp.json())
-        ))
+        const [users, posts, albums] = await Promise.all(urls.map(async function(url){
+            const response = await fetch(url);
+            return response.json();
+        }));
         console.log('user', users)
         console.log('posts', posts)
         console.log("albums", albums)
@@ -126,6 +128,14 @@ const urls = [
         }
     }
     loopThroughUrls(urls);
+
+    const getData2 =  async function() {
+        const arrayOfPromises = urls.map(url => fetch(url));
+        for await (let request of arrayOfPromises) {
+            const data = await request.json();
+        }
+    }
+    
 
 
 
