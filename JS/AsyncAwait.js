@@ -89,12 +89,13 @@ const urls = [
       return fetch(url).then(people => people.json())   
   }))
     .then(array => {
+        throw Error;
       console.log('1', array[0])
       console.log('2', array[1])
       console.log('3', array[2])
       console.log('4', array[3])
     })
     .catch(err => console.log('ughhhh fix it!', err))
-    .finally(data => console.log('extra'));
+    .finally(data => console.log('extra'));  //great for the times when you need to run a piece of code no matter what after a promise
 
 
