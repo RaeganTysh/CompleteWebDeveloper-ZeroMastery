@@ -163,5 +163,8 @@ const promiseOne= new Promise((resolve, reject)=>
 
   //uncaught promise (undefined)= promise.all must have all promises solved- use cathc
 
-  Promise.all([promiseOne, promiseTwo]).then(data => console.log(data))
+  /*Promise.all([promiseOne, promiseTwo]).then(data => console.log(data))
+  .catch(e => console.log('something failed', e));*/
+
+  Promise.allSettled([promiseOne, promiseTwo]).then(data => console.log(data))
   .catch(e => console.log('something failed', e));
