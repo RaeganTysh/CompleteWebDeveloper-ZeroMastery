@@ -184,7 +184,7 @@ objectSpread(tiger, lion, rest);
 
 //Async ES9 
 
-//ES9  - finally / for await feature
+//ES9  - finally / for await of feature
 restParam(1, 2, 3, 4, 5);
 
 function restParam(p1, p2, ...p3) {

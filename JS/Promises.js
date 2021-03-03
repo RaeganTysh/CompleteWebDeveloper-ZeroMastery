@@ -150,3 +150,18 @@ Promise.all(urls.map(url => {
 
 // #6) Change one of your urls above to make it incorrect and fail the promise
 // does your catch block handle it?
+
+
+//test knowledge- what will you get?
+const promiseOne= new Promise((resolve, reject)=>
+  setTimeout(resolve,3000))
+
+  const promiseTwo= new Promise((resolve, reject)=>
+  setTimeout(resolve,3000))
+
+  Promise.all([promiseOne, promiseTwo]).then(data => console.log(data));
+
+  //uncaught promise (undefined)= promise.all must have all promises solved- use cathc
+
+  Promise.all([promiseOne, promiseTwo]).then(data => console.log(data))
+  .catch(e => console.log('something failed', e));
