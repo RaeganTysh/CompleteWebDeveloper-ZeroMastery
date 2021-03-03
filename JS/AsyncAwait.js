@@ -122,17 +122,18 @@ const urls = [
 
 
     //review for of
-    const loopThroughUrls = url => {
+    /*const loopThroughUrls = url => {
         for (url of urls) {
             console.log(url)
         }
     }
-    loopThroughUrls(urls);
+    loopThroughUrls(urls);*/
 
     const getData2 =  async function() {
         const arrayOfPromises = urls.map(url => fetch(url));
         for await (let request of arrayOfPromises) {
             const data = await request.json();
+            console.log(data);
         }
     }
     
